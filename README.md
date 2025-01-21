@@ -72,11 +72,11 @@ for (int i : my_list) std::cout << i << " ";  // Output: 1 2 3 4
 
 ## Project Setup
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/guanshiyin28/Delete-First-and-Delete-Last-Function.git
    ```
-2. Navigate to the project directory:
+2. **Navigate to the project directory:**
    ```bash
    cd Delete-First-and-Delete-Last-Function
    ```
@@ -85,18 +85,18 @@ for (int i : my_list) std::cout << i << " ";  // Output: 1 2 3 4
 
 ### Python
 
-1. Run the Python script:
+1. **Run the Python script:**
    ```bash
    python program.py
    ```
 
 ### C++
 
-1. Compile the C++ program:
+1. **Compile the C++ program:**
    ```bash
    g++ program.cpp -o program
    ```
-2. Run the compiled program:
+2. **Run the compiled program:**
    ```bash
    ./Delete First
    ```
