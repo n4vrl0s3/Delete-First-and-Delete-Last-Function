@@ -127,10 +127,14 @@ int main() {
 - Efficient list manipulation techniques
 - Suitable for beginners and intermediate programmers
 
+<hr><br>
+
 ## Technologies Used
 
 - Python
 - C++
+  
+<hr><br>
 
 ## Project Setup
 
@@ -142,6 +146,8 @@ int main() {
    ```bash
    cd Delete-First-and-Delete-Last-Function
    ```
+
+<hr><br>
 
 ## Steps to Run
 
@@ -165,6 +171,8 @@ int main() {
    ```bash
    ./Delete Last
    ```
+   
+<hr><br>
 
 ## License
 
