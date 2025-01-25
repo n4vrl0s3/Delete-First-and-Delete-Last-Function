@@ -1,12 +1,3 @@
-<div align=center>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=100:FF0000,20:F0F0F0&section=footer&reversal=false&textBg=false&fontAlignY=50&descAlign=48&descAlignY=59"/>
-
-![Jane Doe Banner](https://github.com/user-attachments/assets/6dce4a9a-c124-413d-816b-a0ea878a6cd9)
-<img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=20:FF0000,100:F0F0F0&section=header&reversal=false&textBg=false&fontAlignY=50&descAlign=48&descAlignY=59"/>
-
-</div>
-
 # Delete First and Delete Last Function
 
 This repository aims to provide a comprehensive starting point for understanding and implementing two fundamental list operations: deleting the first element and deleting the last element. These operations are implemented in Python and C++ and serve as a great introduction to list manipulation for beginners and intermediate programmers.
@@ -25,36 +16,107 @@ Deleting the last element of a list is another essential operation that involves
 
 <hr><br>
 
-## Demo
+## Demonstration
 
-Here are some examples of the operations in action:
+Refer to the `program.py`, `Delete First.cpp`, and `Delete Last.cpp` files for complete demonstrations of the delete first and delete last functions in Python and C++.
 
 ### Python
 
 ```python
-# Deleting the first element
-my_list = [1, 2, 3, 4, 5]
-del my_list[0]
-print(my_list)  # Output: [2, 3, 4, 5]
+# Delete First Function
 
-# Deleting the last element
-my_list = [1, 2, 3, 4, 5]
-my_list.pop()
-print(my_list)  # Output: [1, 2, 3, 4]
+arr = [1, 2, 3, 4, 5]
+
+print("Array before deleted:", arr)
+
+arr.pop(0)
+
+print("\nArray after deleted:", arr)
+
+# Delete Last Function
+
+arr = [1, 2, 3, 4, 5]
+
+print("Array before deleted:", arr)
+
+arr.pop()
+
+print("\nArray after deleted:", arr)
 ```
 
 ### C++
 
-```cpp
-// Deleting the first element
-std::vector<int> my_list = {1, 2, 3, 4, 5};
-my_list.erase(my_list.begin());
-for (int i : my_list) std::cout << i << " ";  // Output: 2 3 4 5
+#### Delete First.cpp
 
-// Deleting the last element
-std::vector<int> my_list = {1, 2, 3, 4, 5};
-my_list.pop_back();
-for (int i : my_list) std::cout << i << " ";  // Output: 1 2 3 4
+```cpp
+// filepath: /home/guan/Documents/Code/Delete-First-and-Delete-Last-Function/Delete First.cpp
+#include <stdio.h>
+#include <stdlib.h>
+
+// Fungsi untuk menghapus elemen pertama pada array
+void deleteFirst(int arr[], int n) {
+    for(int i=0; i<n-1; i++) {
+        arr[i] = arr[i+1];
+    }
+}
+
+int main() {
+    int arr[5] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr)/sizeof(arr[0]);
+
+    printf("Array sebelum delete: ");
+    for(int i=0; i<n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    deleteFirst(arr, n);
+
+    printf("\nArray setelah delete: ");
+    for(int i=0; i<n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+```
+
+#### Delete Last.cpp
+
+```cpp
+// filepath: /home/guan/Documents/Code/Delete-First-and-Delete-Last-Function/Delete Last.cpp
+#include <stdio.h>
+#include <stdlib.h>
+
+// Fungsi untuk menghapus elemen terakhir pada array
+void deleteLast(int arr[], int n) {
+    if(n == 0) {
+        printf("Array kosong\n");
+    } else {
+        for(int i=n-1; i>0; i--) {
+            arr[i] = arr[i-1];
+        }
+        arr[0] = 0;
+    }
+}
+
+int main() {
+    int arr[5] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr)/sizeof(arr[0]);
+
+    printf("Array sebelum delete: ");
+    for(int i=0; i<n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    deleteLast(arr, n);
+
+    printf("\nArray setelah delete: ");
+    for(int i=0; i<n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
 ```
 
 <hr><br>
@@ -106,7 +168,7 @@ for (int i : my_list) std::cout << i << " ";  // Output: 1 2 3 4
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache-2.0 License. See the [LICENSE](LICENSE) file for details.
 
 <hr><br>
 
