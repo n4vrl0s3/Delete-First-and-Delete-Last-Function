@@ -1,4 +1,4 @@
-# Delete First and Delete Last Function
+# Delete First and Last
 
 This repository aims to provide a comprehensive starting point for understanding and implementing two fundamental list operations: deleting the first element and deleting the last element. These operations are implemented in Python and C++ and serve as a great introduction to list manipulation for beginners and intermediate programmers.
 
@@ -182,6 +182,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 <div align="center">
   <a href="https://www.x.com/n4vrl0s3/">
-    <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=100:49108B,20:F3F8FF&section=footer&reversal=false&textBg=false&fontAlignY=50&descAlign=48&descAlignY=59"/>
+    <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=100:8E1616,20:EEEEEE&section=footer&reversal=false&textBg=false&fontAlignY=50&descAlign=48&descAlignY=59"/>
   </a>
 </div>
